@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0088cc; /* Telegram blue background */
+            padding: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 48%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 50%; /* Set image height to take half of the card */
+            object-fit: cover;
+            border-radius: 8px 8px 0 0; /* Round only the top corners */
+        }
+
+        .card-title {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #0088cc; /* Button color matches Telegram blue */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #0077b5; /* Darker shade on hover */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-row">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Card Image 1">
+                <div class="card-title">Card Title 1</div>
+                <button onclick="window.location.href='https://example.com/page1';">Join</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Card Image 2">
+                <div class="card-title">Card Title 2</div>
+                <button onclick="window.location.href='https://example.com/page2';">Join</button>
+            </div>
+        </div>
+        <div class="card-row">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Card Image 3">
+                <div class="card-title">Card Title 3</div>
+                <button onclick="window.location.href='https://example.com/page3';">Join</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Card Image 4">
+                <div class="card-title">Card Title 4</div>
+                <button onclick="window.location.href='https://example.com/page4';">Join</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
