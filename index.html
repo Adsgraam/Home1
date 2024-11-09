@@ -17,10 +17,26 @@
             padding: 20px;
         }
 
+        .back-button {
+            margin-bottom: 20px; /* Space below the back button */
+            padding: 10px 20px;
+            background-color: #0077b5; /* A blue color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #005f88; /* Darker blue on hover */
+        }
+
         .card-container {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            margin-top: 20px; /* Adding margin to move the cards down */
         }
 
         .card-row {
@@ -75,6 +91,9 @@
     </style>
 </head>
 <body>
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.location.href='https://example.com/previous-page';">Back</button>
+
     <div class="card-container">
         <div class="card-row">
             <div class="card">
